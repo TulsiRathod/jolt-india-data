@@ -1,0 +1,67 @@
+name: Refresh datasets
+
+on:
+  schedule:
+    # Weekly Monday 04:00 UTC; reviews monthly RBI publishing cadence.
+    - cron: "0 4 * * 1"
+  workflow_dispatch:
+    inputs:
+      datasets:
+        description: "Comma-separated dataset names to refresh (default: all). One of: ifsc, pincode, hsn, rto"
+        default: ""
+        required: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+          cache: maven
+
+      - name: Fetch raw datasets
+        # Each upstream source has its own fetch idiom. Maintainers update
+        # this step as sources evolve. Currently a stub that pulls cached
+        # snapshots from the repo's own raw branch; replace with HTTPS
+        # downloads from RBI / India Post / CBIC once parsers exist.
+        run: |
+          mkdir -p data/raw
+          : # TODO(builder): populate data/raw/*.csv from authoritative sources
+          ls -la data/raw || true
+
+      - name: Run builder
+        run: |
+          mvn -B -DskipTests compile
+          ARGS="${{ inputs.datasets }}"
+          ARGS_SPACED=$(echo "$ARGS" | tr ',' ' ')
+          mvn -B exec:java \
+            -Dexec.mainClass=io.github.tulsirathod.joltindiadata.builder.Builder \
+            -Dexec.args="$ARGS_SPACED"
+
+      - name: Verify built artefacts
+        run: |
+          ls -la src/main/resources/jolt-india-data || true
+          mvn -B test
+
+      - name: Open refresh PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "data: refresh datasets"
+          branch: data-refresh/auto
+          delete-branch: true
+          title: "data: scheduled refresh"
+          body: |
+            Automated dataset refresh produced by the `refresh-data` workflow.
+
+            Review the diff in `src/main/resources/jolt-india-data/*.jid.gz`
+            and sanity-check row counts before merging.
+          add-paths: |
+            src/main/resources/jolt-india-data/*.jid.gz

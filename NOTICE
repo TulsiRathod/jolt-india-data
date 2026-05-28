@@ -1,0 +1,46 @@
+jolt-india-data
+Copyright (c) 2026 Tulsi Rathod
+
+This product bundles lookup data derived from the following public-sector
+sources. The code in this product is MIT-licensed (see LICENSE); the bundled
+datasets carry the attribution requirements of their respective sources.
+
+----
+
+IFSC (Indian Financial System Code) bank/branch directory
+  Source: Reserve Bank of India — "List of NEFT/RTGS enabled bank branches"
+  URL:    https://www.rbi.org.in
+  Notes:  Republished here for offline lookup. Refreshed monthly via the
+          data-refresh workflow; users requiring authoritative real-time
+          data should consult the RBI source directly.
+
+Pincode directory
+  Source: Department of Posts, Government of India — "All India Pincode
+          Directory"
+  URL:    https://www.indiapost.gov.in
+  Notes:  Public-domain dataset. India Post is the authoritative source;
+          this redistribution is for offline lookup convenience.
+
+HSN code -> GST rate mappings
+  Source: Central Board of Indirect Taxes and Customs (CBIC) — GST rate
+          notifications under the CGST/IGST Acts
+  URL:    https://www.cbic.gov.in
+  Notes:  Rate changes are issued by CBIC notification; bundled rates
+          reflect the most recent refresh and may lag the latest
+          notification. Users should consult CBIC for binding rates.
+
+RTO (Regional Transport Office) directory
+  Source: State transport-department public listings (compiled per state).
+  Notes:  No single authoritative source exists; entries are compiled from
+          publicly available state RTO directories.
+
+GST state codes
+  Source: Goods and Services Tax Network (GSTN) — public state-code list,
+          aligned with the First Schedule of the GST Act.
+  Notes:  Includes legacy codes (25 Daman and Diu pre-2020-merger; 28
+          Andhra Pradesh pre-bifurcation) so legacy GSTINs remain resolvable.
+
+----
+
+All trademarks are the property of their respective owners. Bundling these
+datasets does not imply endorsement by any of the named bodies.

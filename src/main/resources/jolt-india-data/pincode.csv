@@ -1,0 +1,19 @@
+# SAMPLE Pincode dataset shipped with jolt-india-data v0.x.
+# Replace with the full India Post directory via the Builder: see PLAN.md §6.
+# Source: India Post All India Pincode Directory (public domain).
+pincode,city,district,state,region
+110001,New Delhi,New Delhi,Delhi,Northern
+110011,New Delhi,New Delhi,Delhi,Northern
+400001,Mumbai,Mumbai,Maharashtra,Western
+400020,Mumbai,Mumbai,Maharashtra,Western
+500001,Hyderabad,Hyderabad,Telangana,Southern
+560001,Bangalore,Bangalore Urban,Karnataka,Southern
+600001,Chennai,Chennai,Tamil Nadu,Southern
+700001,Kolkata,Kolkata,West Bengal,Eastern
+380001,Ahmedabad,Ahmedabad,Gujarat,Western
+395001,Surat,Surat,Gujarat,Western
+411001,Pune,Pune,Maharashtra,Western
+302001,Jaipur,Jaipur,Rajasthan,Northern
+226001,Lucknow,Lucknow,Uttar Pradesh,Northern
+160001,Chandigarh,Chandigarh,Chandigarh,Northern
+682001,Kochi,Ernakulam,Kerala,Southern

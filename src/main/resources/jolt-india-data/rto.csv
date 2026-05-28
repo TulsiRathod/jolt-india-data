@@ -1,0 +1,20 @@
+# SAMPLE RTO dataset shipped with jolt-india-data v0.x.
+# Replace with a fuller list via the Builder: see PLAN.md §6.
+# Source: state transport department public listings.
+code,name,city,state
+DL01,Mall Road RTO,Delhi,Delhi
+DL02,Vasant Vihar RTO,Delhi,Delhi
+MH01,Tardeo RTO,Mumbai,Maharashtra
+MH02,Andheri RTO,Mumbai,Maharashtra
+MH12,Pune RTO,Pune,Maharashtra
+GJ01,Ahmedabad RTO,Ahmedabad,Gujarat
+GJ05,Surat RTO,Surat,Gujarat
+GJ06,Vadodara RTO,Vadodara,Gujarat
+KA01,Koramangala RTO,Bangalore,Karnataka
+KA02,Rajajinagar RTO,Bangalore,Karnataka
+TN01,Tirvallikeni RTO,Chennai,Tamil Nadu
+TN02,Anna Nagar RTO,Chennai,Tamil Nadu
+TS01,Khairatabad RTO,Hyderabad,Telangana
+WB01,Beltala PVD,Kolkata,West Bengal
+UP14,Meerut RTO,Meerut,Uttar Pradesh
+RJ14,Jaipur RTO,Jaipur,Rajasthan

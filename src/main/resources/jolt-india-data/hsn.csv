@@ -1,0 +1,19 @@
+# SAMPLE HSN-GST dataset shipped with jolt-india-data v0.x.
+# Replace with the full CBIC schedule via the Builder: see PLAN.md §6.
+# Rates here are illustrative and may not reflect the latest CBIC notification.
+hsn,rate,description,effective_from
+0401,0.0,Fresh milk (not concentrated nor containing added sugar),2017-07-01
+0901,5.0,Coffee whether or not roasted or decaffeinated,2017-07-01
+1001,5.0,Wheat and meslin,2017-07-01
+1006,5.0,Rice,2017-07-01
+1701,5.0,Cane or beet sugar,2017-07-01
+1905,18.0,Bread; pastry; cakes; biscuits and similar baked products,2017-07-01
+2202,28.0,Carbonated beverages of all kinds,2017-07-01
+3004,12.0,Medicaments consisting of mixed or unmixed products for therapeutic or prophylactic uses,2017-07-01
+3923,18.0,Articles for the conveyance or packing of goods of plastics,2017-07-01
+6109,5.0,T-shirts singlets and other vests knitted or crocheted (sale value up to Rs 1000 per piece),2017-07-01
+6109,12.0,T-shirts singlets and other vests knitted or crocheted (sale value above Rs 1000 per piece),2017-07-01
+6403,5.0,Footwear with outer soles of rubber plastics leather (sale value up to Rs 1000 per pair),2017-07-01
+6403,18.0,Footwear with outer soles of rubber plastics leather (sale value above Rs 1000 per pair),2017-07-01
+8517,18.0,Telephones for cellular networks (smartphones),2017-07-01
+8703,28.0,Motor cars and other motor vehicles principally designed for the transport of persons,2017-07-01

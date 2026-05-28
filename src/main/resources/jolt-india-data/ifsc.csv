@@ -1,0 +1,16 @@
+# SAMPLE IFSC dataset shipped with jolt-india-data v0.x.
+# Replace with the full RBI master list via the Builder: see PLAN.md §6.
+# Source: RBI master IFSC list (public-sector data).
+ifsc,bank,branch,city,state,address,rtgs,neft,imps
+HDFC0000001,HDFC BANK,Mumbai Main,Mumbai,Maharashtra,"HDFC House, Senapati Bapat Marg, Lower Parel",true,true,true
+HDFC0000240,HDFC BANK,Ahmedabad - Stadium,Ahmedabad,Gujarat,"Astral Tower, Near Mithakali Six Roads",true,true,true
+ICIC0000001,ICICI BANK,Mumbai Main,Mumbai,Maharashtra,"ICICI Bank Tower, Bandra Kurla Complex",true,true,true
+ICIC0000007,ICICI BANK,Surat Main,Surat,Gujarat,"Empire State Building, Ring Road",true,true,true
+SBIN0000300,STATE BANK OF INDIA,Mumbai Main Branch,Mumbai,Maharashtra,"Mumbai Main Branch, Mumbai Samachar Marg",true,true,true
+SBIN0011513,STATE BANK OF INDIA,New Delhi Main,New Delhi,Delhi,"Parliament Street, New Delhi",true,true,true
+AXIS0000001,AXIS BANK,Ahmedabad Main,Ahmedabad,Gujarat,"Trishul, 3rd Floor, Opp. Samartheshwar Temple",true,true,true
+KKBK0000001,KOTAK MAHINDRA BANK,Mumbai Main,Mumbai,Maharashtra,"27 BKC, Bandra Kurla Complex",true,true,true
+PUNB0000100,PUNJAB NATIONAL BANK,New Delhi Main,New Delhi,Delhi,"7 Bhikaji Cama Place",true,true,true
+CNRB0000001,CANARA BANK,Bangalore Main,Bangalore,Karnataka,"112 J C Road",true,true,true
+UBIN0530158,UNION BANK OF INDIA,Mumbai Main,Mumbai,Maharashtra,"Union Bank Bhavan, Nariman Point",true,true,true
+BARB0DBSURE,BANK OF BARODA,Surat Main,Surat,Gujarat,"Ring Road, Surat",true,true,true
