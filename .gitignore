@@ -1,0 +1,19 @@
+target/
+*.class
+*.jar
+*.war
+*.log
+
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+.vscode/
+
+# raw downloaded source data (RBI XLSX, India Post CSV, etc.) — kept out of git
+data/raw/
+
+.DS_Store
